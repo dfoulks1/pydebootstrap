@@ -1,0 +1,2 @@
+# pydebootstrap
+Python debootstrap wrapper
