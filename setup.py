@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='pydebootstrap',
-      version='0.1',
+      version='1.0',
       description='Python wrapper for debootstrap',
       url='http://github.com/dfoulks1/pydebootstrap',
       author='Drew Foulks',
