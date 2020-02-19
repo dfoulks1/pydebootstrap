@@ -25,7 +25,7 @@ def create(conf):
     except subprocess.CalledProcessError as e:
         print(e)
     
-    debootstrap_nonos = [ 'os', 'id', 'source', 'arch']
+    debootstrap_nonos = [ 'os', 'id', 'source', 'arch', 'commands']
     debootstrap_args_list = [ ['--' + key, conf[key]] for key in conf.keys() if key not in debootstrap_nonos and conf[key] is not None ]
     debootstrap_args = [ arg for args_pair in debootstrap_args_list for arg in args_pair ]
     positional = ['--arch', conf['arch'], conf['os'], config.jailhouse + conf['id'], conf['source']]
