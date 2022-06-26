@@ -11,7 +11,7 @@ Users running this script must have r/w access to /var/lib/machines.
 #### Create
 pydebootstrap.create() requires a configuration profile like this one:
 
-``
+```
 conf:
   id: 'Ubuntu1804'
   os: 'bionic'
@@ -26,7 +26,7 @@ conf:
   foreign: 
   second-stage: 
   second-stage-target:
-``
+```
 
 In the above example, an Ubuntu 1804 instance will be created in /var/lib/machines named Ubuntu1804.
 The machine that the profile describes does not have to match the OS of the Parent Machine.
